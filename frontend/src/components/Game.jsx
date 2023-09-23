@@ -139,21 +139,11 @@ function Game() {
           const newScrambled = response.data["scrambled"];
           setWord(response.data["word"]);
           scramble(newScrambled);
-          startCountdown();
         })
         .catch((error) => {
           console.log(error);
         });
     };
-    const startCountdown = () => {
-        const interval = setInterval(() => {
-          if (secondsRemaining > 0) {
-            ticker(secondsRemaining - 1);
-          } else {
-            clearInterval(interval);
-          }
-        }, 1000);
-      };
 const failure = () => {
         notification.error({
             message: "Time's up!",
