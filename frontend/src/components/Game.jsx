@@ -296,12 +296,7 @@ const failure = () => {
           ? `Score: ${score}`
           : `Puntos: ${score}`}{" "}
       </p>
-      <p>
-        {" "}
-        {selectedLanguage === "en"
-          ? `Seconds Remaining: ${secondsRemaining}`
-          : `Segundos Restantes: ${secondsRemaining}`}{" "}
-      </p>
+
       <p>
         {" "}
         {selectedLanguage === "en"
