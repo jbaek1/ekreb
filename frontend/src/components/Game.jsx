@@ -117,10 +117,6 @@ function Game() {
             placement: "bottomRight",
             duration: 2,
           });
-          setTimeout(() => {
-            fetchWord();
-            roundset(round + 1);
-          }, 3000); 
         }
         setGuess("");
       })
